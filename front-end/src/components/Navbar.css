@@ -1,0 +1,78 @@
+/* Navbar Container */
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #534b4b7f;
+    padding: 10px 20px;
+    height: 60px;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  /* Navigation Links */
+  .Navlinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .Navlinks li {
+    display: inline;
+  }
+  
+  .Navlinks a {
+    color: rgb(48, 43, 43);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .Navlinks a:hover {
+    color: #19182b;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background-color: #5a5853;
+    color: rgb(244, 234, 234);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: #363533;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Navlinks {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .login-btn {
+      margin-top: 10px;
+    }
+  }
+  
